@@ -1,0 +1,396 @@
+
+.App {
+  text-align: center;
+}
+
+.error {
+  color: #fc8181;
+  font-size: 0.75rem;
+  text-align: left;
+  margin-top: 0.25rem;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+nav h3 {
+  margin: 1rem;
+  cursor: pointer;
+  color: #718096;
+}
+nav h3:hover {
+  color: white;
+}
+
+form {
+  width: 95%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  margin: 1rem 0 0.2rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  font-size: 1rem;
+  color: white;
+  border: 2px solid #4a5568;
+  background-color: #2d3748;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #4299e1;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #a0aec0;
+}
+
+input[type="checkbox"] {
+  width: fit-content;
+  margin-right: 0.5rem;
+  transform: scale(1.25);
+}
+
+.RegisterForm h3 {
+ text-align :center;
+}
+
+.RegisterForm p {
+  text-align: center;
+}
+
+.RegisterForm button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+  margin: 1rem;
+  padding: 0.35rem 0.5rem;
+  background-color: lightblue;
+  color: #1a202c;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input.input-error,
+select.input-error {
+  border-color: #fc8181;
+}
+
+button:disabled {
+  opacity: 0.35;
+}
+
+/* Table */
+.ListContentTable {
+  width:98%;
+  margin-left:auto;
+  margin-right:auto;
+  gap:10px;
+  padding: 1rem;
+  border-top: 1px solid #0c0c0c;
+  border-bottom: 1px solid #0c0c0c;
+}
+
+.ListContentTable table {
+  border-collapse: collapse;
+  width:100%;
+}
+
+
+.ListContentTable th, td {
+  
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 22px;
+  vertical-align: bottom;
+}
+
+tr:hover {
+  background-color: #D6EEEE;
+}
+
+
+/* list of table item */
+.item > label {
+  font-size: 22px;
+  flex-grow:1;
+}
+
+.item svg {
+  width: 30px;
+  min-width:30px;
+  height: 24px;
+  font-size:1rem;
+  color:darkcyan;
+  cursor:pointer;
+}
+
+.item svg:focus,
+.item svg:hover {
+  color:red;
+  outline:none;
+}
+
+/* LOGIN */
+
+.loginContainer {
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.loginContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+
+.loginContainer button {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.loginContainer input {
+  border: 2px solid dodgerblue;
+}
+
+.loginContainer label {
+  text-align: center;
+}
+
+
+Other Parts
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.mainpart{
+  height: auto;
+  display: grid;
+  grid-template-columns: 255px auto;
+}
+.navbar {
+  border-bottom: #000 solid 5px;
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.3s;
+  margin: 8px auto;
+  padding-left: 5px;
+  border-right: rgb(182, 181, 181) solid 2px;
+}
+
+.sidebar h6 {
+  margin: 0;
+}
+
+.sidebar ul li {
+  height: 21px;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  color: rgb(25, 116, 202);
+  font-size: 1px;
+}
+
+.sidebar ul li a:hover {
+  color: #7386D5;
+  background: #fff;
+}
+
+.sidebar ul li.active>a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #6d7fcc;
+}
+
+/* ---------------------------------------------------
+    index page
+----------------------------------------------------- */
+.hometext {
+  margin-top: 20px;
+  height: 150px;
+  padding-top: 30px;  
+}
+
+.homegrid {
+  display: grid;
+  grid-template-columns:33% 33% 33% ;
+  grid-template-rows: 3;
+}
+
+.photos {
+  width: 96%;
+  margin: 16px;
+}
+
+/* ---------------------------------------------------
+    sub category page
+----------------------------------------------------- */
+
+.brand {
+  display: grid;
+  grid-template-columns:25% 25% 25% 25%;
+  grid-template-rows: 200px 200px;
+}
+.grid {
+  
+  margin: 26px;
+
+}
+.brands {
+  width: 50%;
+
+
+}
+
+/* ---------------------------------------------------
+  MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .sidebar {
+      margin-left: -250px;
+  }
+  .sidebar.active {
+      margin-left: 0;
+  }
+  .sidebarCollapse span {
+      display: none;
+  }
+}
+
+/* ---------------------------------------------------
+    product list page
+----------------------------------------------------- */
+.productlist {
+  margin: 10px;
+}
+
+/*test*/
+img.small {
+  max-height: 8rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.row.center {
+  align-items: center;
+}
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 2;
+}
+.block {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.text-right {
+  text-align: right;
+}
+/* ---------------------------------------------------
+    product page
+----------------------------------------------------- */
+.product {
+  background: #f3f3f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.detail {
+  background: #fff;
+  border: none;
+  border-radius: none;
+  width:80%;
+margin: 20px 100px;
+}
+.abc {
+  padding-left: 40px
+}
+
+.col-md-5 ul li {
+  list-style: none;
+  line-height: 50px;
+  color: #000
+}
+
+.col-md-2 {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.col-md-2 a {
+  text-decoration: none;
+  color: #000
+}
+
+.col-md-2.mio {
+  font-size: 12px;
+  padding-top: 7px
+}
+
+.btn-outline-warning {
+  border-radius: 0;
+  border: 2px solid yellow;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  width: 70%
+}
+.shopping {
+  width: 80%;
+  height: 150px;
+  border:solid black 1px;
+  margin-left: 100px;
+  margin-top:20px;
+}
